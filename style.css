@@ -13,6 +13,11 @@ body{
     border-radius: 15px;
     max-width: 300px;
     overflow: hidden;
+    height: 500px;
+}
+
+#calculator button{
+    margin-top: 10px;
 }
 
 #display{
@@ -28,7 +33,7 @@ body{
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 0px;
     padding: 25px;
 }
 
