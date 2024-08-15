@@ -37,7 +37,7 @@ function display(text){
         }
         
         calculated = false;
-        console.log(display_input.value[display_input.value.length-1])
+        //console.log(display_input.value[display_input.value.length-1])
     }
 }
 
