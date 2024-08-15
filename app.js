@@ -1,6 +1,7 @@
 const display_input = document.getElementById('display');
 const clear_b = document.getElementById('clear');
 let calculated = false;
+let operand_pressed = false;
 
 
 function clear(){
@@ -11,20 +12,32 @@ clear_b.onclick = clear
 
 function display(text){
     if(calculated && (text == '+' || text == '-' || text == '*' || text == '/')){
-        display_input.value += text;
-        //console.log("added");
+        if((text == '+' || text == '-' || text == '*' || text == '/') && (display_input.value[display_input.value.length - 1] == '+' || display_input.value[display_input.value.length - 1] == '-' || display_input.value[display_input.value.length - 1] == '*' || display_input.value[display_input.value.length - 1] == '/')){
+            display_input.value += "";
+        }
+        else{
+            display_input.value += text;
+            //console.log("added");
+        }
     }
     else{
-        if (calculated) {
-            //display_input.value = "";
-            display_input.value = text;
-            //console.log("no value");
-        } 
-        else {
-            display_input.value += text;
-            //console.log("writing ")
+        if((text == '+' || text == '-' || text == '*' || text == '/') && (display_input.value[display_input.value.length - 1] == '+' || display_input.value[display_input.value.length - 1] == '-' || display_input.value[display_input.value.length - 1] == '*' || display_input.value[display_input.value.length - 1] == '/')){
+            display_input.value += "";
         }
+        else{
+            if (calculated) {
+                //display_input.value = "";
+                display_input.value = text;
+                //console.log("no value");
+            } 
+            else {
+                display_input.value += text;
+                //console.log("writing ")
+            }
+        }
+        
         calculated = false;
+        console.log(display_input.value[display_input.value.length-1])
     }
 }
 
