@@ -61,3 +61,15 @@ button:active{
 .opr:active, #clear:active{
     background-color: rgb(210, 151, 42);
 }
+
+#del{
+    background-color: rgb(166, 24, 24);
+}
+
+#del:hover{
+    background-color: rgb(198, 47, 47);
+}
+
+#del:active{
+    background-color: rgb(117, 21, 21);
+}

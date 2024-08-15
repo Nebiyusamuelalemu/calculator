@@ -2,7 +2,15 @@ const display_input = document.getElementById('display');
 const clear_b = document.getElementById('clear');
 let calculated = false;
 let operand_pressed = false;
+const delBtn = document.getElementById('del');
 
+
+function del(){
+    display_input.value = display_input.value.slice(0, -1);
+
+}
+
+delBtn.onclick = del;
 
 function clear(){
     display_input.value = "";
