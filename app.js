@@ -17,7 +17,8 @@ function display(text){
         }
         else{
             display_input.value += text;
-            //console.log("added");
+            console.log("added");
+            calculated = false;
         }
     }
     else{
@@ -28,11 +29,11 @@ function display(text){
             if (calculated) {
                 //display_input.value = "";
                 display_input.value = text;
-                //console.log("no value");
+                console.log("no value");
             } 
             else {
                 display_input.value += text;
-                //console.log("writing ")
+                console.log("writing ")
             }
         }
         
