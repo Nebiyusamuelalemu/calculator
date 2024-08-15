@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="calculator">
+            <!--<h1 id="header">Calculator</h1>-->
+            <input type="text" id="display" readonly>
+            <div id="keys">
+                <button class="Btn" id="one" onclick="display('1')">1</button>
+                <button class="Btn" id="two" onclick="display('2')">2</button>
+                <button class="Btn" id="three" onclick="display('3')">3</button>
+                <button class="opr" id="add" onclick="display('+')">+</button>
+                <button class="Btn" id="four" onclick="display('4')">4</button>
+                <button class="Btn" id="five" onclick="display('5')">5</button>
+                <button class="Btn" id="six" onclick="display('6')">6</button>
+                <button class="opr" id="minus" onclick="display('-')">-</button>
+                <button class="Btn" id="seven" onclick="display('7')">7</button>
+                <button class="Btn" id="eight" onclick="display('8')">8</button>
+                <button class="Btn" id="nine" onclick="display('9')">9</button>
+                <button class="opr" id="multiply" onclick="display('*')">*</button>
+                <button class="Btn" id="dot" onclick="calculate()">=</button>
+                <button class="Btn" id="zero" onclick="display('0')">0</button>
+                <button class="Btn" id="zero" onclick="display('.')">.</button>
+                <button class="opr" id="equal" onclick="display('/')">/</button>
+                <button class="Btn" id="clear">C</button>
+            </div>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
